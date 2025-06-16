@@ -1,0 +1,29 @@
+
+<div mat-dialog-content>
+    <p>Formulaire d'ajout</p>
+
+    <mat-form-field appearance="fill">
+      <table>
+        <tr>    
+            <td> <mat-label>Id_poste</mat-label><input type="text" size="20"></td> 
+        </tr>
+        <tr>    
+            <td> <mat-label>Nom</mat-label><input type="text" size="20"></td> 
+        </tr>
+        <tr>    
+            <td> <mat-label>Tel</mat-label><input type="text"  size="20"></td> 
+        </tr>
+        <tr>    
+            <td> <mat-label>Mot de passe</mat-label><input type="password"  size="20"></td> 
+        </tr>
+        <tr>    
+            <td> <mat-label> Confrimer le Mot de passe</mat-label><input type="password"  size="20"></td> 
+        </tr>
+    </table>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button  color="primary" value="submit">Ajouter</button>
+    <button mat-button cdkFocusInitial color="warn" value="reset">Annuler</button>
+
+  </div>

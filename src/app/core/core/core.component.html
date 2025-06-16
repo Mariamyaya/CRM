@@ -1,0 +1,54 @@
+<mat-toolbar color="primary" fxLayout="row">
+  <div fxFlex="nogrow">
+    LOGO
+  </div>
+  <span fxFlex="1 0 auto;"></span>
+  <button mat-icon-button fxFlex="nogrow">
+    <mat-icon fontSet="mdi" fontIcon="mdi-account-circle-outline"></mat-icon>
+  </button>
+  <button mat-icon-button fxFlex="nogrow">
+    <mat-icon fontSet="mdi" fontIcon="mdi-logout"></mat-icon>
+  </button>
+  
+</mat-toolbar>  
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <mat-action-list>
+      <mat-list-item routerLink="/commercial">
+        <button mat-icon-button fxFlex="nogrow">
+        <mat-icon fontSet="mdi" fontIcon="mdi-account-cog"></mat-icon>
+      </button>Gestion commercial 
+    </mat-list-item >
+        <mat-list-item routerLink="/dashboard">
+          <button mat-icon-button fxFlex="nogrow">
+          <mat-icon fontSet="mdi" fontIcon="mdi-account-group"></mat-icon>
+        </button>Gestion des clients 
+      </mat-list-item >
+          <mat-list-item routerLink="/produit">
+            <button mat-icon-button fxFlex="nogrow">
+              <mat-icon fontSet="mdi" fontIcon="mdi-database"></mat-icon>
+            </button>
+            Gestion des produits
+           </mat-list-item >
+
+        <mat-list-item routerLink="vente">
+          <button mat-icon-button fxFlex="nogrow">
+            <mat-icon fontSet="mdi" fontIcon="mdi-cart"></mat-icon>
+          </button>  Gestion de vente
+         </mat-list-item >
+
+         <mat-list-item routerLink="vente">
+          <button mat-icon-button fxFlex="nogrow">
+            <mat-icon fontSet="mdi" fontIcon="mdi-script-text"></mat-icon>
+          </button>  Gestion de facture
+         </mat-list-item >
+
+    </mat-action-list>
+
+    
+  </mat-drawer>
+  
+  <mat-drawer-content class="container">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
